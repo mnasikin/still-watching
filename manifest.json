@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Still Watching",
+    "version": "1.0",
+    "description": "Automatically dismisses 'Are you still watching?' dialogs",
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "yt-watch.js"
+            ]
+        }
+    ]
+}
