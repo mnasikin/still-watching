@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Still Watching",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Automatically dismisses 'Are you still watching?' dialogs",
     "icons": {
         "16": "icons/icon-16.png",
