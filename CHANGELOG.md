@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-01-15
+- **Improved dialog detection**
+  Updated the confirmation logic on Youtube and Youtube Music
+
 ## [1.0.1] - 2026-01-14
 
 ### Fixed

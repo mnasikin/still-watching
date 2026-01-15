@@ -2,12 +2,21 @@ let isHandling = false;
 
 setInterval(() => {
     const dialog = document.querySelector('yt-confirm-dialog-renderer');
-
     if (!dialog) {
         isHandling = false;
         return;
     }
 
+    // check if dialog is visible
+    const isVisible = dialog.offsetParent !== null;
+
+    // if dialog is not visible, reset state
+    if (!isVisible) {
+        isHandling = false;
+        return;
+    }
+
+    // if visible but already handled, stop
     if (isHandling) return;
 
     const confirmBtn = dialog.querySelector(
@@ -24,4 +33,4 @@ setInterval(() => {
     setTimeout(() => {
         document.querySelector('tp-yt-paper-toast')?.remove();
     }, 300);
-}, 3000);
+}, 1000);
