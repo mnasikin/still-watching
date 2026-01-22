@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2026-01-22
+
+### Added
+- **Auto-skip ads (Beta)**: New toggle in popup to automatically skip YouTube video ads when the skip button becomes available.
+- **Popup UI**: Added pop-up UI when clicking extension icon to configure the extension.
+
 ## [1.0.2] - 2026-01-15
 - **Improved dialog detection**
   Updated the confirmation logic on Youtube and Youtube Music

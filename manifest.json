@@ -1,12 +1,18 @@
 {
     "manifest_version": 3,
     "name": "Still Watching",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Automatically dismisses 'Are you still watching?' dialogs",
     "icons": {
         "16": "icons/icon-16.png",
         "48": "icons/icon-48.png",
         "128": "icons/icon-128.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
     },
     "content_scripts": [
         {
